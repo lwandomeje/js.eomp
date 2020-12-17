@@ -1,0 +1,260 @@
+body{
+  height: 100vh;
+  width: 100%;
+  color: w;
+  background-image: linear-gradient(120deg,#f8f8f800,rgb(9, 240, 228),rgba(85, 113, 240, 0.11));
+}
+ 
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin:0px;
+  padding:0px;
+  list-style: none;
+}
+
+ul li {
+  width: 355px;
+  height: 45px;
+  background-color:black;
+  opacity:.8;
+  line-height:45px ;
+  text-align: center ;
+  font-size:15px ;
+
+}
+
+ul li a{
+  text-decoration:none ;
+  color:white;
+  display:block;
+}
+ul li a:hover{
+  background-color: green;
+}
+ul li ul li {
+  display: none;
+}
+ul li:hover ul li{
+  display: block;
+}
+
+
+section{
+height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.main{
+flex-direction: column;
+}
+.container{
+
+width: 100%;
+max-width: 400px;
+margin: 0 outo;
+padding: 20px;
+box-shadow: 0px 0px 80px rgb(14, 13, 13);
+border-radius: 10px ;
+}
+.form{
+width: 100%;
+margin-top: 20px;
+font-size: 20px;
+}
+.form input, form textarea{
+display: flex;
+width: 100%;
+padding: 5px ;
+font-size: 20px ;
+border: 2px solid rgb(12, 221, 75);
+}
+@media all and (max-width: 700px){
+.container,.form ,.form textarea,.main,.container,section{
+color: rgb(226, 13, 84);
+background-color: lightblue; 
+   }
+ }
+ textarea{
+   resize: none;
+ }
+ button{
+   width: 3;
+   border: 1px solid  rgb(12, 221, 75) ;
+   outline: none ;
+   padding:20px ; 
+   font-size: 25px;
+   border-radius: 6px;
+   color:  rgb(12, 221, 75);
+   cursor: pointer;
+
+ }
+ #status{
+   text-align: center;
+   padding: 15px ;
+   margin: 0 auto;
+   border-radius:6px ;
+ }
+#status.success{
+   background-color: green;
+   animation: status 5s ease  forwards ;
+ }
+
+#status.error{
+  background-color: rgba(243, 143, 104, 0.863);
+  animation: status 4s ease forwards ;
+}
+
+ @keyframes status{
+   0%{
+     opacity: 1;
+     pointer-events: all;
+   }
+   90%{
+    opacity: 1;
+    pointer-events: all;
+  }
+  100%{
+    opacity: 0;
+    pointer-events: none;
+  }
+ }
+
+ .wrapper {
+   margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.containerP {
+  overflow: hidden;
+  box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+  background-color: white;
+  text-align: center;
+  border-radius: 1rem;
+  position: relative;
+  width: 480px;
+  height: 44vh;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.banner-img {
+  position: absolute;
+  background-image: url(https://images.unsplash.com/photo-1582727657635-c771002bdada?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  height: 10rem;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile-img {
+  width: 17rem;
+  clip-path: circle(110px at center);
+  margin-top: 3.5rem;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.description {
+  margin: 1rem 2rem;
+  font-size: 2.9rem;
+}
+.btn {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 1rem;
+  background-color: var(--clr-primary);
+}
+
+.skills{
+  width: 900px;
+  margin: 200px auto;
+  color: black;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+
+}
+.skills li {
+  margin: 20px 0;
+}
+.bar{
+  background: white;
+  display: block;
+  height: 9px;
+  border: 1px solid rgb(6, 2, 65);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 19px rgb(5, 12, 48);
+}
+.bar span{
+ height: 9px; 
+ float: left;
+ background: indigo;
+}
+.html{
+  width: 90%;
+  animation: html 3s;
+}
+.css{
+  width:65%;
+  animation: css 3s;
+
+
+}
+.javascript{
+  width: 50% ;
+  animation: javascript 3s;
+
+}
+.python{
+  width: 75%;
+  animation: python 3s;
+
+}
+
+@keyframes html{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
+}
+@keyframes css{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 65%;
+  }
+}
+@keyframes javascript{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 50%;
+  }
+}
+@keyframes python{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 75%;
+  }
+}
