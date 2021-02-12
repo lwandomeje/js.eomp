@@ -4,117 +4,171 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
     <link href="P.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
 
   </head>
 <body>
-  <nav >
-  <ul class="nav-links">
-    <li><a href="#index">HOME</a></li>
-    <li class="nav-link"><a href="#about">ABOUT</a></li>
-    <li class="nav-link"><a href="#test">TESTIMONIALS</a></li>
-    <li class="nav-link"><a href="#skills.html">SKILLS</a></li>
-    <li class="nav-link"><a href="#projects">PROJECECTS</a></li>
-    <li class="nav-link"><a href="#contact">CONTACT</a></li>
 
-  </ul>
-</nav> 
-  <div class="index" id="index">
-      <div class="info">
-        <h1>HELLO, I'M <span>LWANDO</span> MEJE</h1>
-        <p>I'M A JUNIOR WEB DEVELOPER</p>
-        <a href="#about">Get Started</a>
-        <div class="bubbl"></div>
-        </div>
+  <div class="navbar">
+ 
+    <a class="btn">
+    <span></span>
+    <span></span>
+    <span></span>
+    </a>
+    <div class="menu">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#test">TESTIMONIALS</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
+    </div>
     </div>
 
-  </div>
-
-
-  <div id="about" class="about">
-    <h1>ABOUT ME</h1>
-    <div class="team">
-      <div class="team_member">
-        <div class="team_img">
-          <img src="photos/photos/Lwando Meje (3).JPG" class="about-pic" >
+    <section id="home">
+      <div class="inner-width">
+        <div class="content">
+          <h1>Hi I'm </h1><br>
+          <div class="sm">
+            <a href="https://github.com/" class="fab fa-github"></a>
+            <a href="https://www.linkedin.com/checkpoint/rm/sign-in-another-account?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin" class="fab fa-linkedin-in"></a>
+          </div>
+          <div class="buttons">
+            <a href="#contact">Contact me</a>
+          </div>
         </div>
-        <h3>LWANDO MEJE</h3>
-        <p class="role">developer</p>
-        <p>I am a determined, honest individual who takes responsibility from his mistakes and learns from them. I’m always trying to improve myself and try new things. I’m a person that loves challenges and problem-solving. I can work under pressure and meet required deadlines.</p>
-        
-        </p>
-        <a href="cv.html"  class="abouta">READ MORE</a>
       </div>
+    </section>
+
+    <script type="text/javascript">
+    
+    $(".btn").on("click",function(){
+      $('.menu').toggleClass("show");
+    });
+    
+    
+    </script>
+
+
+<div class="about-section" id="about">
+  <div class="inner-width1">
+    <h1>About Me</h1>
+    <div class="border"></div>
+
+    <div class="team_img">
+      <img src="photos/photos/Lwando Meje (3).JPG" height="500px " class="about-pic" >
+    </div>
+
+    <div class="about-section-row">
+      <div class="about-section-col">
+        <div class="about1">
+          <p>
+            I am a determined, honest individual who takes responsibility from his mistakes and learns from them. I’m always trying to improve myself and try new things. I’m a person that loves challenges and problem-solving. I can work under pressure and meet required deadlines.
+          </p>
+          <p>
+          Working Experience: Glade Chemical Manufacturers cc<br>
+           Period: 2019<br>
+           Role: General worker<br>
+           Duties: Cleaning,Collected,Manual labour
+          </p>
+          <p>
+            Education:<br>
+
+            Matric (year and school): 2015 Khulani High School
+            Any other education (even if you have dropped-out):
+            University name: North Link college  
+            Period: 2016-2018
+            Completed: N4 Electrical Engineering
+          </p>
+          <a href="cv.html">Read More</a>
+        </div>
+      </div>
+      <div class="about-section-col">
+        <div class="skills1">
+          <div class="skill1">
+            <div class="title">Python</div>
+            <div class="progress">
+              <div class="progress-bar p1"><span>60%</span></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="title">HTML</div>
+            <div class="progress">
+              <div class="progress-bar p2"><span>75%</span></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="title">CCC</div>
+            <div class="progress">
+              <div class="progress-bar p3"><span>60%</span></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="title">Java-Script</div>
+            <div class="progress">
+              <div class="progress-bar p4"><span>50%</span></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+</div>
 
-  <div id="test" class="wrapper">
-    <h1>TESTIMONIAL</h1>
-    <div class="team">
-      <div class="team_member">
-        <div class="team_img">
-          <img src="photos/images/MRg.jpg" alt="Team_image" class="about-pic" >
-        </div>
-        <h3>Godwin Dzvapatsva</h3>
-        <p class="role">Head of Curriculum</p>
-        <p>I am delighted to be called upon as a reference for Lwando. He always behaves professionally. Godwin – Head of Curriculum and Learning.</p>
-      </div>
-      <div class="team_member">
-        <div class="team_img">
-          <img src="photos/images/Tabang Duda (2).JPG" class="about-pic">
-        </div>
-        <h3>Tabang Duda</h3>
-        <p class="role">Junior developer</p>
-        <p>Lwando Meje is always working very hard on his projects and he is always willing to help.</p></div>
-      <div class="team_member">
-        <div class="team_img">
-          <img src="photos/images/Robyn-Lee Harris (4).jpg" class="about-pic">
-        </div>
-        <h3>Robyn-Lee Harris</h3>
-        <p class="role">Junior developer</p>
-        <p>Lwando is the best person to work with, he is profession</p>
-        <p>its alwaysgood to work with him in a group</p>
-      </div>
-    </div>
-  </div>
+
+
   
-  <div class="skills" id="skills.html">
-    <div class="skills-cont">
-    <h1>MY SKILLS</h1>
-    <li>
-        <h3>HTML5</h3><span class="bar"><span class="html"></span></span>
-    </li>
+  <div id="test" class="testimonial-section">
 
-    <li>
-        <h3>CSS3</h3><span class="bar"><span class="css"></span></span>
-    </li>
+    <div class="inner-width">
+      <h1>TESTIMONIAL</h1>
+      <div class="border"></div>
 
-    <li>
-        <h3>JAVASCRIPT</h3><span class="bar"><span class="javascript"></span></span>
-    </li>
+      <div class="testimonial-pics">
+        <img src="photos/images/MRg.jpg" alt="test-1" class="active">
+        <img src="photos/images/Tabang Duda (2).JPG" alt="test-2">
+        <img src="photos/images/Robyn-Lee Harris (4).jpg" alt="test-3">
+      </div>
 
-    <li>
-        <h3>PYTHON</h3><span class="bar"><span class="python"></span></span>
-    </li>
-  </div>
+      <div class="testimonial-contents">
+        <div class="testimonial active" id="test-1">
+          <p>I am delighted to be called upon as a reference for Lwando. He always behaves professionally.Head of Curriculum and Learning.</p>
+          <span class="description">Godwin Dzvapatsva</span>
+        </div>
+
+        <div class="testimonial" id="test-2">
+          <p>Lwando Meje is always working very hard on his projects and he is always willing to help.</p>
+          <span class="description">Tabang Duda</span>
+        </div>
+
+        <div class="testimonial" id="test-3">
+          <p>Lwando is the best person to work with, he is profession its alwaysgood to work with him in a group</p>
+          <span class="description">Robyn-Lee Harris</span>
+        </div>
+
+
+      </div>
+    </div>
   </div>
  
   <div class="project" id="projects">
     <h1>MY PROJECTS</h1>
+    <div class="border"></div>
+
     <div class="wrapper">
       <div class="containerP">
         <div class='banner-img'></div>
         <a href=""></a>
         <img src="photos/photos/sweger.jpg" class="profile-img">
-        <p class="name">Sweggqa Website</p>
+        <p class="name">Swegga Website</p>
         <a href="https://hungry-galileo-d95445.netlify.app">TRY IT</a>
       </div>
-  
-
-  
-
   
       <div class="containerP">
           <div class='banner-img'></div>
@@ -140,35 +194,39 @@
   </div>
   </div>
 
-<div class="contact" id="contact">
-  <h1 class="contact-h">CONTACT ME</h1>
-  <section class="section1">
+<div class="contact-section">
 
-      <div class="container">
-           <form action="https://formspree.io/f/mknpqved" method="POST" id="my-form">
-              <div class="form">
-                  <label for="firstname">First Name</label>
-                  <input type="text" name="firstname" id="firstname">
-              </div>
-              <div class="form">
-                  <label for="lastname">Last Name</label>
-                  <input type="text" name="lastname" id="lastname">
-              </div>
-              <div class="form">
-                  <label for="email">Email</label>
-                  <input type="email" name="email" id="email">
-              </div>
-              <div class="form">
-                  <label for="massage">Message</label>
-                  <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
-              </div>
-              <button type="submit">Submit</button>
-           </form>
-      </div>
-      <div id="status"></div>
-      <section>
+  <h1>Contact Me</h1>
+  <div id="contact" class="border"></div>
+  <form class="contact-form" action="https://formspree.io/f/mknpqved" method="post" id="my-form">
 
-  
+    <input for="firstname" name="firstname"   type="text" class="contact-form-text"  placeholder="Your name" id="firstname" >
+
+    <input for="lastname" name="lastname"  type="text"  class="contact-form-text" placeholder="Your lastname"  id="lastname">
+
+
+    <input for="email" name="email" type="email" class="contact-form-text" placeholder="Your email" id="email" >
+
+
+    <textarea for="massage" name="massage" class="contact-form-text" placeholder="Your message"  id="massage"></textarea>
+
+
+    <input type="submit" class="contact-form-btn" value="Send">
+
+  </form>
+
+  <div class="iconss" style="  background: rgb(92, 90, 90);
+  " >
+    <a href="https://www.linkedin.com/checkpoint/rm/sign-in-another-account?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"><i class="fab fa-linkedin-in fa-4x"></i></a>
+    <a href="https://github.com/"><i class="fab fa-github fa-4x"></i></a>
+  </div>
+  <div id="status"></div>
+
+</div>
+
+
+
+
   </div> 
   <script src="p.js"></script>
 
@@ -176,10 +234,7 @@
 </div>
 
 </div>
-<div class="iconss" >
-  <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in fa-4x"></i></a>
-  <a href="https://github.com/"><i class="fab fa-github fa-4x"></i></a>
-</div>
+
 
 
 
